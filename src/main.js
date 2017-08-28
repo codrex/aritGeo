@@ -32,5 +32,5 @@ const aritGeo = seq =>{
   return isAP && 'Arithmetic' || isGP && 'Geometric' || -1;
 }
 
-module.exports = aritGeo;
+export default aritGeo;
 
