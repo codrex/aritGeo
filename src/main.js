@@ -1,5 +1,6 @@
 const ap = (seq,cd)=>{
   // cd is the common difference
+  
   if(seq.length==2){
     return seq[1]-seq[0] === cd;
   }
@@ -7,7 +8,7 @@ const ap = (seq,cd)=>{
 }
 
 const gp = (seq,r)=>{
-  //r is the common ration
+  //r is the common ratio
   if(seq.length==2){
     return seq[1]/seq[0] === r;
   }
@@ -21,6 +22,8 @@ const aritGeo = seq =>{
   if(seq.length === 0)return 0;
   if(seq.length<2)return -1;
 
+  // seq[1]/seq[0] get the common ratio of a geomentric progression
+  // seq[1]-seq[0] gets the common difference of an arithmetic progression
 
   const isGP = gp(seq,seq[1]/seq[0]);// checking if sequence is a geometric sequence
   const isAP = ap(seq,seq[1]-seq[0]);// checking if sequence is an arithmetic sequence
