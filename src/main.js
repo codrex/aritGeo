@@ -31,5 +31,3 @@ const aritGeo = seq =>{
 
 module.exports = aritGeo;
 
-
-console.log(aritGeo([1,2,3,4]))
